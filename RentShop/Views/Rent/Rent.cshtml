@@ -1,0 +1,63 @@
+﻿@model RentShop.ViewModel.RentFormViewModel
+@{
+    ViewBag.Title = "Rent";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h3>Rent A Shop</h3>
+
+@using (Html.BeginForm("Rent", "Rent"))
+{
+    <p class="alert alert-info">All Fields are <strong>required</strong></p>
+
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Company)
+        @Html.TextBoxFor(m => m.Company, new { @class = "form-control" , autofocus ="autofocus"})
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Contact)
+        @Html.TextBoxFor(m => m.Contact, new { @class = "form-control" ,placeholder ="eg 7838xxxxxx" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Email)
+        @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+       <label>
+           Shop Type
+       </label>
+        @Html.DropDownListFor(m => m.ShopRequired, new SelectList(Model.Shops, "Id", "Name"),
+  "", new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        <label>
+            Units Required
+        </label>
+        @Html.DropDownListFor(m => m.UnitsRequired, new SelectList(Model.Units, "Id", "Name"),
+  "", new { @class = "form-control" })
+    </div>
+
+    <label>
+        Area Required
+    </label>
+    @Html.TextBoxFor(m => m.Area, new { @class = "form-control" })
+
+    <label >
+        Monthly Revenue
+    </label>
+    @Html.TextBoxFor(m => m.monthlyRevenue, new { @class = "form-control" })
+
+
+    <button class="btn btn-primary" type="submit" >Purchase</button>
+
+
+   
+
+}
+
+

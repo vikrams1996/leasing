@@ -1,0 +1,138 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    color: lightskyblue;
+    background-color: #ffffff;
+}
+
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+/*BOOTSTRAP OVERRIDES*/
+
+
+
+.navbar-inverse {
+    background-color: mediumslateblue;
+    border-color: mediumslateblue;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+}
+
+.navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.navbar-brand {
+    float: left;
+    padding: 15px 15px;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    color: #ffffff;
+    background-color: #46627b;
+}
+
+
+
+label {
+    display: inline-block;
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: forestgreen;
+    border-color: #357ebd;
+}
+
+.btn {
+   
+    padding: 8px 20px;
+}
+
+
+
+/*PAGE-LEVEL STYLE*/
+
+.sold {
+
+    list-style:none;
+}
+.sold > li{
+    position:relative;
+    margin-bottom:30px;
+
+}
+
+.sold >li.info {
+    position:absolute;
+    top:0px;
+    left:70px;
+
+
+
+}
+
+.sold > li.details {
+
+    background-color:darkblue;
+    color:white;
+    text-align:center;
+    width:60px;
+    border-radius:8px;
+}
+
+.sold>li.details.company {
+
+    text-transform:uppercase;
+    font-size:14px;
+    font-weight:bold;
+    padding :2px 6px;
+
+
+}
+
+.sold >li.details.contact{
+
+    background:white;
+    color:black;
+    font-size:20px;
+    padding: 6px 12px;
+
+}
+
+/*FORM STYLING*/
+
+

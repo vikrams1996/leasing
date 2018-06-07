@@ -1,0 +1,43 @@
+﻿@model IEnumerable<RentShop.Models.Details>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<ul class="sold">
+    @foreach (var detail in Model)
+    {
+        <li>
+            <div class="details">
+                <div class="company">
+
+                    @detail.Company
+                </div>
+
+                <div class="contact">
+                    @detail.Contact
+                </div>
+                
+
+            </div> 
+            <div class="info">
+
+                <span class="Email">
+                    @detail.Email
+
+                </span>
+                <span class="Area">
+                    @detail.Area
+                </span>
+
+                <span class="monthlyRevenue">
+                    @detail.monthlyRevenue
+                </span>
+
+            </div>
+        </li>
+          
+
+
+
+    }
+</ul>
